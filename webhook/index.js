@@ -32,6 +32,9 @@ module.exports = async function (context, req) {
 
     // Handle each events from here
     if (eventType === 'customer.created') {
-        
+        context.res = {
+            status: 200,
+            body: 'Customer created!'
+        };
     }
 }
